@@ -1,0 +1,305 @@
+html {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
+}
+
+.me {
+    width: 300px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 8px;
+    -webkit-transform: rotate(90deg);
+}
+
+article {
+    padding: 10px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+main {
+    min-height: 30em;
+}
+
+.author {
+    font-size: 15px;
+    font-style: italic;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    background-color: #dba3af;
+    border-radius: 10px;
+}
+
+.site-header {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    overflow: auto; /* clear fix to make div span all elements */
+}
+
+.site-header img {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.site-title {
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    position: absolute;
+    bottom: 25px;
+    right: 16px;
+}
+
+.site-slogan {
+    font-size: 25px;
+    font-style: italic;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    padding-right: 50px;
+}
+
+.navbar {
+    padding: 1em;
+    background-color: #fff;
+    border-top: 1px solid #9c9;
+    top: 0;
+    vertical-align: top;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-left: -2.5em;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .selected {
+    text-decoration: underline;
+}
+
+aside {
+    width: 30%;
+    float: left;
+    padding-top: 1em;
+}
+
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#site-footer {
+    padding-bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.site-byline img {
+    float: left;
+    width: 65px;
+    padding-right: 1em;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.site-byline-img {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.site-name {
+    font-style: italic;
+    font-size: 12px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+}
+
+.site-presentation {
+    display: block;
+    padding-bottom: 1em;
+    overflow: auto;
+}
+
+.site-byline {
+    border-style: groove;
+    background-color: #fff;
+    padding: inherit;
+    margin: 15px;
+    overflow: auto;
+}
+
+span > a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+
+textarea {
+    padding: 0.5em;
+    margin: 0.5em;
+    resize: vertical;
+}
+
+input:focus textarea:focus {
+    border: 2px solid black;
+}
+
+.flashmessage {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 725px;
+    left: 225px;
+}
+
+table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px;
+    padding: 10px;
+}
+
+th {
+    height: 50px;
+    background-color: #fff;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(62, 62, 62);
+    background-color: rgba(62, 62, 62, 0.4);
+}
+
+.links {
+    width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 980px) {
+    body {
+        width: auto;
+    }
+
+    .site-byline {
+        font-size: 10px;
+        overflow-y: hidden;
+    }
+
+    .author {
+        font-size: 10px;
+    }
+
+    .me {
+        float: none;
+        width: 80%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .me-img {
+        overflow: hidden;
+    }
+
+    main {
+        margin-top: 15px;
+        display: block;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .navbar a {
+        width: 90%;
+        text-align: left;
+        font-size: 12px;
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar li {
+        text-align: left;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    .site-title {
+        font-size: 24px;
+    }
+
+    .site-slogan {
+        display: none;
+    }
+
+    .main-logo,
+    .site-header {
+        width: auto;
+    }
+
+    form {
+        width: auto;
+    }
+}
